@@ -1,7 +1,7 @@
 /* C-HUB service worker. To release an update, change CACHE_VERSION (e.g. v7) and upload again. */
-var CACHE_VERSION = "v8-ios-splash";
+var CACHE_VERSION = "v7";
 var CACHE = "c-hub-" + CACHE_VERSION;
-var SHELL = ["./", "index.html", "i18n.js", "manifest.json", "logo.webp", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon.ico", "ios-splash.jpg", "ios-splash-1179x2556.jpg", "ios-splash-1290x2796.jpg", "ios-splash-1206x2622.jpg", "ios-splash-1242x2688.jpg", "ios-splash-1125x2436.jpg", "ios-splash-828x1792.jpg", "ios-splash-750x1334.jpg"];
+var SHELL = ["./", "index.html", "i18n.js", "manifest.json", "logo.webp", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon.ico"];
 var CDN = /^https:\/\/(cdnjs\.cloudflare\.com|cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//;
 
 /* Each file is cached on its own, so one missing file can no longer stop the whole install. */
