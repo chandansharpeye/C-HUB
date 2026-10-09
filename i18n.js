@@ -89,6 +89,13 @@ var RAW={
 "Never miss a date":["कोई तारीख़ न चूकें","କୌଣସି ତାରିଖ ଛାଡ଼ନ୍ତୁ ନାହିଁ"],
 "Fast revision":["तेज़ रिवीज़न","ଶୀଘ୍ର ପୁନରାବୃତ୍ତି"],
 "Official portals":["आधिकारिक पोर्टल","ସରକାରୀ ପୋର୍ଟାଲ୍"],
+"Install":["इंस्टॉल","ଇନ୍‌ଷ୍ଟଲ୍"],"Install C-HUB app":["C-HUB ऐप इंस्टॉल करें","C-HUB ଆପ୍ ଇନ୍‌ଷ୍ଟଲ୍ କରନ୍ତୁ"],
+"Computer Learning Hub":["कंप्यूटर लर्निंग हब","କମ୍ପ୍ୟୁଟର୍ ଲର୍ଣ୍ଣିଂ ହବ୍"],
+"Typing Lab":["टाइपिंग लैब","ଟାଇପିଂ ଲ୍ୟାବ୍"],"Coding Academy":["कोडिंग एकेडमी","କୋଡିଂ ଏକାଡେମୀ"],
+"Computer Basics|Computer Fundamentals":["कंप्यूटर की बुनियादी बातें","କମ୍ପ୍ୟୁଟର୍ ମୌଳିକ ଜ୍ଞାନ"],
+"Keyboard Shortcuts Master":["कीबोर्ड शॉर्टकट मास्टर","କୀବୋର୍ଡ ଶର୍ଟକଟ୍ ମାଷ୍ଟର"],
+"Job Alerts":["जॉब अलर्ट","ଚାକିରି ଅଲର୍ଟ"],"Before you apply":["आवेदन से पहले","ଆବେଦନ ପୂର୍ବରୁ"],
+"Quick quiz":["क्विक क्विज़","ତୁରନ୍ତ କୁଇଜ୍"],"Personal best:":["सर्वश्रेष्ठ स्कोर:","ସର୍ବୋତ୍ତମ ସ୍କୋର:"],
 "Search C-HUB":["C-HUB में खोजें","C-HUB ରେ ଖୋଜନ୍ତୁ"],
 "Nothing found. Try another word.":["कुछ नहीं मिला। कोई दूसरा शब्द आज़माएं।","କିଛି ମିଳିଲା ନାହିଁ। ଅନ୍ୟ ଶବ୍ଦ ଚେଷ୍ଟା କରନ୍ତୁ।"],
 "New version ready. Tap to refresh.":["नया वर्शन तैयार है। रिफ़्रेश करने के लिए टैप करें।","ନୂଆ ସଂସ୍କରଣ ପ୍ରସ୍ତୁତ। ରିଫ୍ରେଶ୍ କରିବାକୁ ଟ୍ୟାପ୍ କରନ୍ତୁ।"]
@@ -138,14 +145,14 @@ window.chubT=function(k){var m=M[k];return m?m[idx()]:""};
 window.chubLang=function(l){if(l)apply(l);return cur};
 function init(){
   if(document.getElementById("chub_lang"))return;
-  var nav=document.querySelector("nav"),s=document.createElement("select"),bar=document.createElement("div");
+  var nav=document.querySelector("nav>div"),s=document.createElement("select"),bar=document.createElement("span");
   s.id="chub_lang";s.setAttribute("aria-label","Language");s.className="chub-lang-sel";
   [["en","English"],["hi","हिन्दी"],["or","ଓଡ଼ିଆ"]].forEach(function(o){var x=document.createElement("option");x.value=o[0];x.textContent=o[1];x.lang=o[0];s.appendChild(x)});
   var st=document.createElement("style");
-  st.textContent=".chub-langbar{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:0 0 6px;padding-right:58px}.chub-lang-sel{min-height:44px;padding:4px 10px;border-radius:999px;font:600 15px system-ui,sans-serif;max-width:140px}#chub-upd{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:9998;max-width:420px;margin:0 auto;border-radius:14px}";
+  st.textContent="#chub-upd{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:9998;max-width:420px;margin:0 auto;border-radius:14px}";
   document.head.appendChild(st);
-  bar.className="chub-langbar";var ic=document.createElement("span");ic.textContent="🌐";ic.setAttribute("aria-hidden","true");bar.appendChild(ic);bar.appendChild(s);
-  if(nav&&nav.parentNode)nav.parentNode.insertBefore(bar,nav.nextSibling);else document.body.prepend(bar);
+  bar.className="chub-lang";var ic=document.createElement("span");ic.textContent="🌐";ic.setAttribute("aria-hidden","true");bar.appendChild(ic);bar.appendChild(s);
+  var th=document.getElementById("th_btn");if(nav&&th&&th.parentNode===nav)nav.insertBefore(bar,th);else if(nav)nav.insertBefore(bar,nav.firstChild);else document.body.prepend(bar);
   s.addEventListener("change",function(){apply(s.value)});
   var saved="en";try{saved=localStorage.getItem(KEY)||"en"}catch(e){}
   mo.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:AT});

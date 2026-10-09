@@ -1,44 +1,20 @@
-C-HUB update v2: English / हिन्दी / ଓଡ଼ିଆ selector, working Install button, safer updates
-=====================================================================================
+C-HUB: redesigned header (Install, Language, Theme, Menu) - root-path version
+=============================================================================
+UPLOAD these 4 files to the repo ROOT, replacing old ones: index.html, sw.js, manifest.json, i18n.js
+DO NOT upload: translations-todo.csv, README.txt, any images (already in your repo).
+STEPS: GitHub -> Add file -> Upload files -> remove any other queued files -> add the 4 files -> Commit to main.
+After 1-2 minutes open the site and refresh once. Installed app: close fully and reopen (cache is now v8).
 
-UPLOAD (repo root, same folder as your current index.html) - 3 files, replace/add:
-  1. index.html   (modified - replace)
-  2. sw.js        (modified - replace; cache v5 -> v6)
-  3. i18n.js      (NEW - add)
-OPTIONAL: translations-todo.csv is only a work list for a translator. Do NOT upload it to the site.
+HEADER (phones): row 1 = logo (kept clear of the sound button); row 2 = [Install icon] [Language] [Theme] [Menu].
+Install = yellow icon button (icon + text on wider screens); Language = pill with globe; Theme = soft round button;
+Menu = dark pill. All 44 px tall. Desktop: one row. Moved the language selector into the header (no separate row).
+Install button still opens the browser's native install dialog; it cannot install silently. If unavailable (iPhone
+Safari, Firefox) a sheet with manual steps appears.
 
-DO NOT UPLOAD / REPLACE: manifest.json, everything in icons/, language-toggle.js and the old sw.js from the
-earlier partial ZIP (they conflict with this version).
-
-STEPS
-  1. Back up / note your current commit.
-  2. GitHub -> Add file -> Upload files -> drop the 3 files -> Commit to main.
-  3. After 1-2 minutes open https://chandansharpeye.github.io/C-HUB/ and refresh once.
-  4. Installed app: close it fully and reopen; a "New version ready. Tap to refresh." button appears once the update loaded.
-
-BEFORE YOU UPLOAD: your files use icons/... paths (icons/logo.webp, icons/icon-192.png ...). The GitHub repo page showed
-these images at the repo root. Make sure the images really are in an icons/ folder, or logo/icons/install will not work.
-
-TRANSLATION STATUS (honest)
-  Translated (Hindi + Odia): menu and navigation, section headings, hero, Top Tools, install/update messages,
-  search, and a set of common labels (Subject, Class, Date, Clear, No file chosen, Print / Save as PDF ...).
-  NOT translated: 1,110 other strings (about 33,000 characters) - most form labels, placeholders, explanations,
-  FAQs, Privacy Policy, Terms, About text, study tips, formulas, career data, quiz questions, government-link
-  descriptions, Welcome tour. They stay in English; nothing breaks.
-  The full list is in translations-todo.csv (columns: English, Hindi, Odia, times on page).
-  Hindi/Odia wording has not been reviewed by a native speaker.
-  Deliberately left in English: names that are also saved values or used by app logic (subject lists, class
-  names, option values, career names, timer Start/Pause) - translating them could break saved data.
-
-TO ADD TRANSLATIONS: open i18n.js, add lines inside RAW:   "English text": ["हिन्दी","ଓଡ଼ିଆ"],
-  (exact English text; emoji at the start are ignored; several English texts can share one line with "A|B").
-
-TESTED (headless Chromium, served at /C-HUB/): language switch en/hi/or, back to English restores exact text,
-  choice saved in localStorage and restored after reload, select option values unchanged across languages,
-  existing features (quick note, skill tracker, menu search, theme button) still work and keep saved data,
-  install button (real prompt path + manual instructions), all 10 shell files cached under /C-HUB/ (icons/ paths),
-  manifest icons and start_url load, offline reload (Odia + saved data intact), service-worker update v6->v7
-  (old cache deleted, banner shown, changed file served immediately), no horizontal overflow at 360 and 412 px, no JS errors.
-NOT TESTED: real phone, iPhone Safari, real Android install prompt, live GitHub Pages, upgrade from your live v5 cache,
-  Odia font rendering on old phones.
-KNOWN ISSUE (already in your original file): at 320 px width the page is 40 px too wide (Top Tools cards).
+TESTED (headless Chromium): header geometry in 36 combinations (English/Hindi/Odia x 320/360/390/412/600/800 px x normal and
+extra-wide font): no overlaps, nothing outside the screen, all buttons >= 44 px; regression suites (language, saved data,
+offline, SW update, install flow, 2.0 modules) pass; screenshots checked at 360 px (English, Odia), dark mode, desktop.
+KNOWN: with an extra-wide font the PAGE is 6 px too wide at 360 px (46 at 320) - same in your original 2.0 file; caused by
+buttons further down the page, not the header. At 320 px the language name may be shortened with "...".
+NOT TESTED: your real phone, iPhone Safari, live GitHub Pages.
+Translation is still incomplete (see translations-todo.csv).
