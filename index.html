@@ -9,7 +9,16 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="C-HUB">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta property="og:title" content="C-HUB: Study • Skills • Tools"><meta property="og:description" content="Free student tools that run on your device: notes, PDF tools, planners, calculators, practice tests and government links."><meta property="og:type" content="website"><meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-startup-image" href="ios-splash-1179x2556.jpg" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-1290x2796.jpg" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-1206x2622.jpg" media="screen and (device-width: 402px) and (device-height: 874px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-1242x2688.jpg" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-1125x2436.jpg" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-828x1792.jpg" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="ios-splash-750x1334.jpg" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="preload" as="image" href="ios-splash.jpg">
+<meta property="og:title" content="C-HUB: Study • Skills • Tools"><meta property="og:description" content="Free student tools that run on your device: notes, PDF tools, planners, calculators, practice tests and government links."><meta property="og:type" content="website"><meta name="twitter:card" content="summary">
 <title>C-HUB: Study • Skills • Tools</title>
 <meta name="description" content="C-HUB: Study • Skills • Tools. Free student tools that run on your device: notes, PDF tools, calculators, quiz, career explore and more.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap">
@@ -334,31 +343,10 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 @media(max-width:720px){nav{gap:8px;padding-right:58px}.logo{font-size:20px;gap:8px}.logo .lg{width:34px;height:34px}nav div{gap:6px}#mn_btn{padding:8px 14px}}
 @media print{.rv{opacity:1!important;transform:none!important}footer,.catbar,nav,#up,.wa{display:none}}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.hero .timer.logo-card{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;padding:18px;gap:14px}.logo-card img{width:96px}section{padding:44px 0}.gh{padding-top:48px}}
-
-/* C-HUB desktop-only startup splash */
-#chub-pc-splash{display:none}
-@media (min-width:900px) and (pointer:fine){
-  #chub-pc-splash{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:#f4f8ff;opacity:1;visibility:visible;transition:opacity .35s ease,visibility .35s ease;cursor:pointer}
-  #chub-pc-splash img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-  #chub-pc-splash.is-hiding{opacity:0;visibility:hidden;pointer-events:none}
-}
-@media (prefers-reduced-motion:reduce){#chub-pc-splash{transition:none}}
 </style>
 <script>try{var _s=JSON.parse(localStorage.getItem("css_set")||"{}");if(_s.th==="light"||_s.th==="dark")document.documentElement.setAttribute("data-theme",_s.th)}catch(e){}</script>
 </head>
 <body>
-<div id="chub-pc-splash" aria-label="C-HUB loading screen" role="status" title="Click to continue"><img src="splash-pc.webp" alt="C-HUB — Study, Skills, Tools"></div>
-<script>
-(function(){
-  var splash=document.getElementById('chub-pc-splash');
-  if(!splash)return;
-  var desktop=window.matchMedia('(min-width: 900px) and (pointer: fine)').matches;
-  if(!desktop){splash.remove();return;}
-  function closeSplash(){if(!splash||splash.classList.contains('is-hiding'))return;splash.classList.add('is-hiding');window.setTimeout(function(){if(splash&&splash.parentNode)splash.parentNode.removeChild(splash);},380);}
-  splash.addEventListener('click',closeSplash);
-  window.setTimeout(closeSplash,2200);
-})();
-</script>
 <div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#assistant">AI Study Assistant</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
 
 <div class="wrap">
