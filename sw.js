@@ -1,7 +1,7 @@
 /* C-HUB service worker. To release an update, change CACHE_VERSION (e.g. v7) and upload again. */
 var CACHE_VERSION = "v8";
 var CACHE = "c-hub-" + CACHE_VERSION;
-var SHELL = ["./", "index.html", "i18n.js", "manifest.json", "logo.webp", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon.ico"];
+var SHELL = ["./", "index.html", "i18n.js", "manifest.json", "logo.webp", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "apple-touch-icon.png", "favicon.ico", "splash-pc.webp"];
 var CDN = /^https:\/\/(cdnjs\.cloudflare\.com|cdn\.jsdelivr\.net|fonts\.googleapis\.com|fonts\.gstatic\.com)\//;
 
 /* Each file is cached on its own, so one missing file can no longer stop the whole install. */
