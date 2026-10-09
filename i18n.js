@@ -145,14 +145,14 @@ window.chubT=function(k){var m=M[k];return m?m[idx()]:""};
 window.chubLang=function(l){if(l)apply(l);return cur};
 function init(){
   if(document.getElementById("chub_lang"))return;
-  var nav=document.querySelector("nav"),s=document.createElement("select"),bar=document.createElement("div");
+  var nav=document.querySelector("nav>div"),s=document.createElement("select"),bar=document.createElement("span");
   s.id="chub_lang";s.setAttribute("aria-label","Language");s.className="chub-lang-sel";
   [["en","English"],["hi","हिन्दी"],["or","ଓଡ଼ିଆ"]].forEach(function(o){var x=document.createElement("option");x.value=o[0];x.textContent=o[1];x.lang=o[0];s.appendChild(x)});
   var st=document.createElement("style");
-  st.textContent=".chub-langbar{display:flex;justify-content:flex-end;align-items:center;gap:8px;padding:0 0 6px;padding-right:58px}.chub-lang-sel{min-height:44px;padding:4px 10px;border-radius:999px;font:600 15px system-ui,sans-serif;max-width:140px}#chub-upd{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:9998;max-width:420px;margin:0 auto;border-radius:14px}";
+  st.textContent="#chub-upd{position:fixed;left:12px;right:12px;bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:9998;max-width:420px;margin:0 auto;border-radius:14px}";
   document.head.appendChild(st);
-  bar.className="chub-langbar";var ic=document.createElement("span");ic.textContent="🌐";ic.setAttribute("aria-hidden","true");bar.appendChild(ic);bar.appendChild(s);
-  if(nav&&nav.parentNode)nav.parentNode.insertBefore(bar,nav.nextSibling);else document.body.prepend(bar);
+  bar.className="chub-lang";var ic=document.createElement("span");ic.textContent="🌐";ic.setAttribute("aria-hidden","true");bar.appendChild(ic);bar.appendChild(s);
+  var th=document.getElementById("th_btn");if(nav&&th&&th.parentNode===nav)nav.insertBefore(bar,th);else if(nav)nav.insertBefore(bar,nav.firstChild);else document.body.prepend(bar);
   s.addEventListener("change",function(){apply(s.value)});
   var saved="en";try{saved=localStorage.getItem(KEY)||"en"}catch(e){}
   mo.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:AT});
