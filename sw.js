@@ -1,11 +1,11 @@
-/* C-HUB service worker upgrade — v7
+/* C-HUB service worker upgrade — v12
  * Core app shell is precached. Optional PDF libraries are cached when online;
  * an unavailable CDN never prevents installation.
  */
-const CACHE_VERSION = "v7";
+const CACHE_VERSION = "v12";
 const CACHE = "c-hub-" + CACHE_VERSION;
 const SHELL = [
-  "./", "./index.html", "./manifest.json", "./i18n.js",
+  "./", "./index.html", "./manifest.json", "./i18n.js", "./school-library.js", "./school-library.css",
   "./logo.webp", "./icon-192.png", "./icon-512.png",
   "./icon-maskable-512.png", "./apple-touch-icon.png",
   "./favicon-32.png", "./favicon-48.png", "./favicon.ico",

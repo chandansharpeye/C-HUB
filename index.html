@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="school-library.css">
 <meta name="theme-color" content="#032577">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -361,7 +362,7 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 </style>
 </head>
 <body>
-<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
+<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#school-library">📚 School Study Library (Class 5–10)</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
 
 <div class="wrap">
 <nav><a class="logo" href="#top" aria-label="C-HUB home"><img class="lg" src="logo.webp" alt="" width="38" height="38"><span>C<span>-HUB</span></span></a>
@@ -378,6 +379,7 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 <section id="top-tools" class="top-tools"><div class="wrap"><div class="lib-head"><div><h2 style="margin:0">⚡ Top Tools</h2><p class="lead" style="margin:4px 0 0">Your most-used student tools, one tap away.</p></div></div>
 <div class="top-tools-grid" style="margin-top:14px">
 <a class="top-tool" href="#practice">🧠 <span>Practice &amp; Tests<small>Quiz and mock tests</small></span></a>
+<a class="top-tool" href="#school-library">📚 <span>School Study Library<small>Classes 5–10 · BSE Odisha</small></span></a>
 <a class="top-tool" href="#notes">📝 <span>Notes Maker<small>Make quick notes</small></span></a>
 <a class="top-tool" href="#filetools">📄 <span>PDF &amp; Image Tools<small>Convert and compress</small></span></a>
 <a class="top-tool" href="#focus">⏱️ <span>Focus Timer<small>Study sessions</small></span></a>
@@ -593,6 +595,34 @@ button { padding: 8px 14px; border-radius: 8px; }</textarea></label><label class
 <div class="ob" id="qz_stat"></div></div>
 <div id="qz_run" hidden></div>
 </div><div id="tp_practice_1" role="tabpanel" hidden><div id="mt_set"><div class="sf"><label class="full">Your questions<textarea id="mt_q" style="min-height:160px" placeholder="What is 2+2? | 3 | 4 | 5 | 6 | B"></textarea></label><label>Time (minutes)<input id="mt_min" type="number" min="1" max="180" value="10" inputmode="numeric"></label><div class="full row"><button type="button" id="mt_go">Start test</button><button type="button" id="mt_smp" class="ghost">Add sample questions</button><button type="button" id="mt_clr" class="ghost">Clear</button></div></div><div class="status" id="mt_msg" aria-live="polite"></div></div><div id="mt_run" hidden></div></div></div></section>
+
+<section id="school-library" data-no-i18n="true" class="sys">
+ <div class="wrap">
+  <h2 data-school-i18n="title">📚 School Study Library</h2>
+  <p class="lead" data-school-i18n="lead">BSE Odisha · Classes 5–10 · Illustrated learning, textbook access and exam practice in one place.</p>
+  <div class="school-intro">
+   <div class="school-banner"><span class="school-badge">✦ C-HUB SCHOOL EDITION</span><h3 data-school-i18n="title">School Study Library</h3><p data-school-text="bannerCopy">Visual study cards · Official book links · Practice Q&amp;A · Personal revision cards</p></div>
+   <div class="school-mini-stat"><div class="school-stat"><strong>6</strong><span data-school-text="statClasses">Classes · 5 to 10</span></div><div class="school-stat"><strong>5+</strong><span data-school-text="statSubjects">Subject groups (availability varies)</span></div><div class="school-stat"><strong>3</strong><span data-school-text="statModes">Learning modes</span></div><div class="school-stat"><strong>100%</strong><span data-school-text="statLocal">Local revision-card storage</span></div></div>
+  </div>
+  <div class="school-controls">
+   <label><span data-school-i18n="chooseClass">Choose class</span><select id="school-class"><option value="5">Class 5</option><option value="6">Class 6</option><option value="7">Class 7</option><option value="8">Class 8</option><option value="9">Class 9</option><option value="10">Class 10</option></select></label>
+   <label><span data-school-i18n="subject">Subject</span><select id="school-subject"></select></label>
+   <label><span data-school-i18n="chapter">Chapter / topic (optional)</span><input id="school-chapter" maxlength="100" data-school-placeholder="topicPlaceholder" placeholder="e.g. Chapter 3: Fractions"></label>
+  </div>
+  <div class="school-source">
+   <div class="school-source-head"><div class="school-source-icon">📖</div><div style="flex:1;min-width:0"><h3 id="school-source-title">Official textbook resources</h3><p class="school-muted" id="school-resource-text">Official textbook availability varies by class and subject.</p></div></div>
+   <div class="school-actions"><a class="btn" id="school-source-link" href="https://scert.odisha.gov.in/new-textbook-class-i-viii/" target="_blank" rel="noopener noreferrer">Open official textbook resources ↗</a><button type="button" class="ghost" id="school-reload">Refresh selection</button><button type="button" class="ghost" id="school-print">Print / Save as PDF</button></div>
+   <p class="school-muted" id="school-source-note">Textbook links open official portals. Check the current edition used by your school.</p>
+  </div>
+  <div class="school-tabs" role="tablist" aria-label="School study library tabs"><button type="button" data-school-tab="visual" aria-selected="true" data-school-i18n="lesson">Visual lesson</button><button type="button" data-school-tab="qa" aria-selected="false" data-school-i18n="qa">Questions &amp; answers</button><button type="button" data-school-tab="revision" aria-selected="false" data-school-i18n="revision">Exam revision</button></div>
+  <div class="school-panel" id="school-panel-visual" data-school-panel="visual"><h3 data-school-i18n="lessonTitle">Study visually</h3><p data-school-i18n="lessonIntro">Use the visual cards as a study template, then check each topic against your current textbook.</p><div id="school-visual"></div>
+   <div class="school-upload"><h3 data-school-i18n="upload">Open a textbook file from your device</h3><p class="school-muted" data-school-i18n="uploadHint">PDFs and images stay on your device.</p><input id="school-file" type="file" accept="application/pdf,image/*" aria-label="Choose textbook PDF or image"><p class="school-status" id="school-status" aria-live="polite">No textbook file selected yet.</p><div id="school-preview" hidden><h4 id="school-preview-title"></h4><button type="button" class="ghost" id="school-preview-close" data-school-i18n="clearFile">Close preview</button></div></div>
+  </div>
+  <div class="school-panel" id="school-panel-qa" data-school-panel="qa" hidden><h3 data-school-i18n="qaTitle">Practice questions with answers</h3><p data-school-i18n="qaIntro">Original starter questions for practice; verify chapter-specific answers with your textbook.</p><div id="school-qa-list" class="school-qa-list"></div></div>
+  <div class="school-panel" id="school-panel-revision" data-school-panel="revision" hidden><h3 data-school-i18n="revisionTitle">School-exam revision</h3><p data-school-i18n="revisionIntro">Create your own chapter-wise revision cards from the exact questions your teacher assigns.</p><div class="school-form"><label><span data-school-i18n="qLabel">Question</span><textarea id="school-q" maxlength="1200" data-school-placeholder="qPlaceholder" placeholder="Type a question from your textbook or class notes"></textarea></label><label><span data-school-i18n="aLabel">Answer / explanation</span><textarea id="school-a" maxlength="2400" data-school-placeholder="aPlaceholder" placeholder="Write the verified answer in your own words"></textarea></label><div class="full school-actions"><button type="button" id="school-add-card" data-school-i18n="addCard">Save revision card</button><button type="button" class="ghost" id="school-export" data-school-i18n="exportCards">Export my cards</button></div></div><p class="school-muted" data-school-i18n="offline">Your saved revision cards remain on this device; export a backup if you change phones.</p><h4 data-school-i18n="yourCards">Your saved revision cards</h4><div id="school-cards-list" class="school-cards-list"></div></div>
+  <p class="school-muted" data-school-text="warning">⚠️ C-HUB is an independent study tool, not an official BSE Odisha website. Official textbooks and chapter-specific answer keys must be checked against the current edition. The visual cards and sample Q&amp;A here are original practice aids, not a replacement for the textbook.</p>
+ </div>
+</section>
 
 <section id="assistant" class="sys tabsec"><div class="wrap"><h2>24×7 AI Study Assistant<span class="badge">AI</span></h2><p class="lead"> Get simple explanations, build better prompts and study with NotebookLM. AI can make mistakes, so check important answers.</p><div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-p="tp_assistant_0">🤖 AI Helper</button><button type="button" role="tab" aria-selected="false" data-p="tp_assistant_1">✍️ Prompt Builder</button><button type="button" role="tab" aria-selected="false" data-p="tp_assistant_2">📓 NotebookLM</button></div><div id="tp_assistant_0" role="tabpanel">
 <div class="brandbox"><b>Your AI study helper, available any time you need it.</b><span>It explains concepts in simple language, helps you solve doubts step by step and supports your revision. It is a study helper, not a replacement for your teachers. AI can make mistakes, so check important answers with your textbook or teacher.</span></div>
@@ -2244,7 +2274,7 @@ window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();dp=
 window.addEventListener("appinstalled",function(){dp=null;$("hd_inst").hidden=true;sheet(IT("inst_done"))});
 var go=function(h){var say=function(m){h?h.textContent=m:sheet(m)};
 if(isSA()){say(IT("inst_done"));return}
-if(dp){var d=dp;dp=null;$("hd_inst").classList.remove("ready");d.prompt();d.userChoice.then(function(c){say(c&&c.outcome==="accepted"?IT("inst_done"):IT("inst_manual"))}).catch(function(){});return}
+if(dp){var d=dp;dp=null;$("hd_inst").classList.remove("ready");try{var promptResult=d.prompt();Promise.resolve(promptResult).then(function(){return d.userChoice}).then(function(c){say(c&&c.outcome==="accepted"?IT("inst_done"):IT("inst_manual"))}).catch(function(){say(IT("inst_manual"))})}catch(err){say(IT("inst_manual"))}return}
 say(IT(/iphone|ipad|ipod/i.test(navigator.userAgent)?"inst_ios":"inst_manual"))};
 $("mn_inst").onclick=function(){go($("mn_hint"))};$("hd_inst").onclick=function(){go(null)};$("hd_inst").hidden=isSA();
 
@@ -2508,10 +2538,11 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
   // Ensure all same-page buttons/links work even when content is injected later.
   document.addEventListener('click',function(e){var a=e.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1),target=document.getElementById(id);if(target){e.preventDefault();target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});history.replaceState(null,'','#'+id)}});
   // Final version marker for debugging without cluttering the UI.
-  document.documentElement.dataset.chubVersion='11-final';
+  document.documentElement.dataset.chubVersion='2.0-final';
 })();
 </script>
 <script src="i18n.js"></script>
+<script src="school-library.js" defer></script>
 <script>
 /* C-HUB 2.0: local-only learning tools */
 (function(){

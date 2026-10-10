@@ -1,24 +1,21 @@
-C-HUB UPGRADE PACK — QUICK INSTALL
+C-HUB 2.0 — INSTALL / DEPLOY
+============================
 
-Files included:
-- chub-upgrade.js: global section search + recently used, backup reminder/export, language selector, board/class selector.
-- sw.js: v7 service worker; caches app shell and attempts to cache pinned PDF.js/pdf-lib libraries when online.
-- manifest.json and icon files: updated C-HUB logo assets for web/PWA/Android and Apple touch icon.
+1. Download a backup of the current repository before replacing files.
+2. Extract C-HUB-main.zip.
+3. Upload the CONTENTS of the C-HUB-main folder into the GitHub repository root. Do not upload only index.html: the new school-library.js and school-library.css files are required.
+4. Replace the existing index.html, i18n.js, sw.js, manifest.json, README files and matching icons/assets with the release versions. Keep all existing logo/icon/splash assets.
+5. Commit to the GitHub Pages publishing branch.
+6. Wait for Pages to deploy. Open the site, refresh, and if installed as an app, fully close and reopen it to update service worker cache v12.
 
-IMPORTANT: Make a backup/export of your current repository before replacing files.
+INSTALL BUTTON
+--------------
+The browser's native install prompt can only be shown where the browser supports it and the PWA meets installability criteria. On unsupported browsers, C-HUB shows manual Add to Home Screen / Install instructions.
 
-INSTALL:
-1. Upload/replace sw.js at the repository root.
-2. Upload/replace manifest.json at the repository root.
-3. Upload the icon files at the repository root, replacing same-named files.
-4. Upload chub-upgrade.js at the repository root.
-5. In index.html, find the final </body> tag and add this line immediately before it:
-   <script src="chub-upgrade.js" defer></script>
-6. Commit changes on the main branch and wait for GitHub Pages to rebuild.
-7. Open C-HUB in Chrome and refresh. If an old version remains, close the installed PWA and reopen it after a minute.
+SCHOOL STUDY LIBRARY
+--------------------
+Classes 5–8 link to the SCERT Odisha textbook portal; Classes 9–10 link to BSE Odisha textbook resources. These are official portal links, not guaranteed direct PDF URLs. Use the edition prescribed by the school. Local PDF/image preview does not upload the file. Revision cards are stored in this browser and can be exported.
 
-NOTES:
-- The language selector currently translates the new upgrade UI (search, backup prompt and board filters). Full translation of every existing C-HUB tool/content needs a complete audited translation dictionary; this pack does not falsely claim every existing paragraph is translated.
-- PDF libraries are optional cache attempts so a CDN outage does not break service-worker installation. A tool can work offline only after its library has successfully been cached once while online.
-- Board links point to official board homepages. Please verify the current-year syllabus/sample-paper page before linking individual PDFs.
-- This pack does not automatically push changes to GitHub; you upload/commit these files yourself.
+LIMITATIONS
+-----------
+The School Study Library UI and starter practice examples are included, but complete verified chapter-wise Q&A for all subjects/classes must be added from the current textbook content. The legacy site's translations are not yet complete across all 1,000+ unique strings.

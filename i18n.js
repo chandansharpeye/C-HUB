@@ -90,6 +90,9 @@ var RAW={
 "Fast revision":["तेज़ रिवीज़न","ଶୀଘ୍ର ପୁନରାବୃତ୍ତି"],
 "Official portals":["आधिकारिक पोर्टल","ସରକାରୀ ପୋର୍ଟାଲ୍"],
 "Install":["इंस्टॉल","ଇନ୍‌ଷ୍ଟଲ୍"],"Install C-HUB app":["C-HUB ऐप इंस्टॉल करें","C-HUB ଆପ୍ ଇନ୍‌ଷ୍ଟଲ୍ କରନ୍ତୁ"],
+"School Study Library":["स्कूल स्टडी लाइब्रेरी","ସ୍କୁଲ୍ ଷ୍ଟଡି ଲାଇବ୍ରେରୀ"],
+"School Study Library (Class 5–10)":["स्कूल स्टडी लाइब्रेरी (कक्षा 5–10)","ସ୍କୁଲ୍ ଷ୍ଟଡି ଲାଇବ୍ରେରୀ (ଶ୍ରେଣୀ ୫–୧୦)"],
+"Classes 5–10 · BSE Odisha":["कक्षा 5–10 · BSE Odisha","ଶ୍ରେଣୀ ୫–୧୦ · BSE Odisha"],
 "Computer Learning Hub":["कंप्यूटर लर्निंग हब","କମ୍ପ୍ୟୁଟର୍ ଲର୍ଣ୍ଣିଂ ହବ୍"],
 "Typing Lab":["टाइपिंग लैब","ଟାଇପିଂ ଲ୍ୟାବ୍"],"Coding Academy":["कोडिंग एकेडमी","କୋଡିଂ ଏକାଡେମୀ"],
 "Computer Basics|Computer Fundamentals":["कंप्यूटर की बुनियादी बातें","କମ୍ପ୍ୟୁଟର୍ ମୌଳିକ ଜ୍ଞାନ"],
@@ -125,8 +128,9 @@ function attrs(e){
     if(w[a]!==undefined&&w[a]===v)v=o[a];else{o[a]=v;delete w[a]}
     var r=cur==="en"?v:tr(v);if(r!==e.getAttribute(a)){w[a]=r;e.setAttribute(a,r)}})}
 function walk(root){
-  if(root.nodeType===3){if(root.parentNode&&!/^(SCRIPT|STYLE|TEXTAREA)$/.test(root.parentNode.nodeName))node(root);return}
+  if(root.nodeType===3){if(root.parentNode&&root.parentNode.closest&&root.parentNode.closest("[data-no-i18n]"))return;if(root.parentNode&&!/^(SCRIPT|STYLE|TEXTAREA)$/.test(root.parentNode.nodeName))node(root);return}
   if(root.nodeType!==1||/^(SCRIPT|STYLE)$/.test(root.nodeName))return;
+  if(root.closest&&root.closest("[data-no-i18n]"))return;
   attrs(root);
   for(var c=root.firstChild;c;c=c.nextSibling)walk(c)}
 var mo=new MutationObserver(function(ms){

@@ -1,0 +1,43 @@
+/* C-HUB School Study Library — branded visual study workspace */
+#school-library{--sl-line:var(--line,#d8deec);--sl-panel:var(--panel,#fff);--sl-ink:var(--ink,#14182b);--sl-muted:var(--mute,#555d7a)}
+#school-library .school-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:stretch;margin:18px 0 24px}
+#school-library .school-banner{padding:24px;border-radius:24px;background:linear-gradient(135deg,#182b78,#4658b5 65%,#0f8b8d);color:#fff;position:relative;overflow:hidden}
+#school-library .school-banner:after{content:'📚';position:absolute;font-size:100px;right:12px;bottom:-18px;opacity:.15;transform:rotate(-12deg)}
+#school-library .school-banner h3{font-size:clamp(24px,4vw,34px);margin:8px 0}.school-banner p{max-width:50ch;margin:0;opacity:.9}
+#school-library .school-mini-stat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#school-library .school-stat{border:1px solid var(--sl-line);border-radius:18px;background:var(--sl-panel);padding:16px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+#school-library .school-stat strong{font-size:25px;line-height:1.2;color:var(--brand,#2b3a8f)}#school-library .school-stat span{font-size:13px;color:var(--sl-muted)}
+#school-library .school-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:18px;border:1px solid var(--sl-line);border-radius:20px;background:var(--sl-panel);margin:16px 0}
+#school-library .school-controls label,#school-library .school-form label{display:flex;flex-direction:column;gap:6px;font-weight:700;min-width:0}
+#school-library select,#school-library input,#school-library textarea{width:100%;min-width:0;font:inherit;color:var(--sl-ink);background:var(--sl-panel);border:1.5px solid var(--sl-line);border-radius:12px;padding:11px 12px}
+#school-library .school-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+#school-library .school-actions a,#school-library .school-actions button{min-height:44px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+#school-library .school-source{padding:16px 18px;border:1px solid var(--sl-line);background:var(--sl-panel);border-radius:18px;margin:14px 0}
+#school-library .school-source-head{display:flex;align-items:center;gap:12px}.school-source-icon{width:48px;height:48px;border-radius:15px;background:#e9edff;display:grid;place-items:center;font-size:24px;flex:none}
+#school-library .school-source h3{font-size:20px;margin:0 0 4px}#school-library .school-muted{color:var(--sl-muted);font-size:14px}
+#school-library .school-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 14px}
+#school-library .school-tabs button{background:transparent;border:1.5px solid var(--sl-line);color:var(--sl-ink);padding:10px 16px}
+#school-library .school-tabs button[aria-selected="true"]{background:var(--sl-ink);color:var(--bg,#fff);border-color:var(--sl-ink)}
+#school-library .school-panel{border:1px solid var(--sl-line);border-radius:22px;background:var(--sl-panel);padding:clamp(14px,2.5vw,24px);margin-bottom:18px}
+#school-library .school-panel h3{font-size:24px;margin:0 0 8px}#school-library .school-panel>p{color:var(--sl-muted)}
+#school-library .school-visual-head{display:flex;align-items:center;gap:12px;padding:18px;border-radius:18px;background:linear-gradient(120deg,#eef2ff,#e4fbf5);color:#17234e;margin:14px 0}
+#school-library .school-visual-icon{width:56px;height:56px;border-radius:16px;background:#fff;display:grid;place-items:center;font-size:28px;flex:none}
+#school-library .school-visual-head small{font-size:11px;letter-spacing:.08em;font-weight:800;opacity:.7}#school-library .school-visual-head h3{font-size:23px;margin:4px 0 0;overflow-wrap:anywhere}
+#school-library .school-visual-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#school-library .school-visual-card{border:1px solid var(--sl-line);border-radius:18px;padding:18px;min-width:0;position:relative;overflow:hidden;background:var(--sl-panel)}
+#school-library .school-visual-card>span{font-size:28px;display:block;margin-bottom:10px}#school-library .school-visual-card>b{display:block;font-size:17px}#school-library .school-visual-card p{font-size:14px;color:var(--sl-muted);margin:8px 0 0}
+#school-library .school-visual-card.idea{border-top:4px solid #f0b429}#school-library .school-visual-card.remember{border-top:4px solid #0f8b8d}#school-library .school-visual-card.steps{border-top:4px solid #6376d8}
+#school-library .school-visual-card ol{padding-left:19px;margin:8px 0 0;color:var(--sl-muted);font-size:14px}#school-library .school-source-foot{font-size:13px;color:var(--sl-muted);margin:14px 0 0}
+#school-library .school-qa-list{display:grid;gap:10px;margin-top:16px}
+#school-library .school-qa{display:flex;gap:12px;padding:16px;border:1px solid var(--sl-line);border-radius:16px;background:var(--sl-panel)}
+#school-library .school-qa-num{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#e9edff;color:#263b91;font-weight:800;flex:none}
+#school-library .school-qa h4{font-size:17px;line-height:1.35;margin:2px 0 8px}#school-library .school-qa-body{min-width:0;flex:1}#school-library .school-qa details summary{cursor:pointer;color:var(--brand,#2b3a8f);font-weight:700}#school-library .school-qa details p{color:var(--sl-muted);margin:8px 0 0}
+#school-library .school-upload{border:1.5px dashed var(--sl-line);border-radius:18px;padding:18px;margin:14px 0;background:var(--bg,#f4f7fb)}
+#school-library .school-file-preview{display:block;width:100%;max-height:72vh;min-height:220px;object-fit:contain;border:1px solid var(--sl-line);border-radius:12px;background:#fff;margin-top:12px}
+#school-library .school-file-preview[src$="pdf"]{height:70vh}#school-library #school-preview[hidden]{display:none}
+#school-library .school-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}#school-library .school-form .full{grid-column:1/-1}#school-library .school-form textarea{min-height:100px;resize:vertical}
+#school-library .school-cards-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-top:14px}
+#school-library .school-user-card{border:1px solid var(--sl-line);border-radius:16px;padding:14px;background:var(--sl-panel);overflow-wrap:anywhere}.school-user-card p{white-space:pre-wrap}.school-user-card small{color:var(--sl-muted)}#school-library .school-remove{background:transparent;border:1px solid var(--sl-line);color:var(--sl-muted);padding:5px 10px;font-size:13px;margin-top:8px}
+#school-library .school-status{min-height:24px;color:var(--sl-muted);font-size:14px;margin:8px 0}#school-library .school-badge{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#e4fbf5;color:#12635f;padding:6px 10px;font-size:12px;font-weight:800}
+@media(max-width:680px){#school-library .school-intro{grid-template-columns:1fr}#school-library .school-controls{grid-template-columns:1fr}#school-library .school-visual-grid{grid-template-columns:1fr}#school-library .school-form{grid-template-columns:1fr}#school-library .school-form .full{grid-column:auto}#school-library .school-banner{padding:20px}#school-library .school-stat strong{font-size:22px}}
+@media print{body *{visibility:hidden!important}#school-library,#school-library *{visibility:visible!important}#school-library{position:absolute;left:0;top:0;width:100%;background:#fff;color:#000}#school-library .school-controls,#school-library .school-actions,#school-library .school-upload,#school-library .school-tabs,#school-library .school-remove{display:none!important}#school-library .school-panel{break-inside:avoid;border:1px solid #aaa}}
