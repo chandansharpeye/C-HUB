@@ -1,0 +1,24 @@
+C-HUB UPGRADE PACK — QUICK INSTALL
+
+Files included:
+- chub-upgrade.js: global section search + recently used, backup reminder/export, language selector, board/class selector.
+- sw.js: v7 service worker; caches app shell and attempts to cache pinned PDF.js/pdf-lib libraries when online.
+- manifest.json and icon files: updated C-HUB logo assets for web/PWA/Android and Apple touch icon.
+
+IMPORTANT: Make a backup/export of your current repository before replacing files.
+
+INSTALL:
+1. Upload/replace sw.js at the repository root.
+2. Upload/replace manifest.json at the repository root.
+3. Upload the icon files at the repository root, replacing same-named files.
+4. Upload chub-upgrade.js at the repository root.
+5. In index.html, find the final </body> tag and add this line immediately before it:
+   <script src="chub-upgrade.js" defer></script>
+6. Commit changes on the main branch and wait for GitHub Pages to rebuild.
+7. Open C-HUB in Chrome and refresh. If an old version remains, close the installed PWA and reopen it after a minute.
+
+NOTES:
+- The language selector currently translates the new upgrade UI (search, backup prompt and board filters). Full translation of every existing C-HUB tool/content needs a complete audited translation dictionary; this pack does not falsely claim every existing paragraph is translated.
+- PDF libraries are optional cache attempts so a CDN outage does not break service-worker installation. A tool can work offline only after its library has successfully been cached once while online.
+- Board links point to official board homepages. Please verify the current-year syllabus/sample-paper page before linking individual PDFs.
+- This pack does not automatically push changes to GitHub; you upload/commit these files yourself.

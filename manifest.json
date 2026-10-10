@@ -1,88 +1,28 @@
 {
-  "name": "C-HUB: Study • Skills • Tools",
+  "name": "C-HUB — Study • Skills • Tools",
   "short_name": "C-HUB",
-  "description": "Free student tools that run on your device: notes, PDF tools, planners, calculators, practice tests and government links.",
-  "id": "./",
+  "description": "C-HUB student learning hub",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#032577",
   "theme_color": "#032577",
-  "lang": "en-IN",
-  "dir": "ltr",
-  "categories": [
-    "education",
-    "productivity"
-  ],
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Focus Timer",
-      "short_name": "Focus",
-      "url": "./#focus",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Notes Maker",
-      "short_name": "Notes",
-      "url": "./#notes",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "PDF & Image Tools",
-      "short_name": "PDF Tools",
-      "url": "./#filetools",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
-    },
-    {
-      "name": "Marks Tracker",
-      "short_name": "Marks",
-      "url": "./#marks",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "sizes": "192x192",
-          "type": "image/png"
-        }
-      ]
     }
   ]
 }
