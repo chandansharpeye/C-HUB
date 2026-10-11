@@ -359,11 +359,18 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 @media(max-width:720px){nav{flex-wrap:wrap;padding:12px 0 4px;gap:8px 0}nav .logo{flex:1 1 100%;display:flex;align-items:center;gap:8px;padding-right:58px}nav div{flex:1 1 100%;width:100%;display:flex;flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:6px;overflow:visible;padding-bottom:0}nav div button{flex:none}nav div .chub-lang{flex:1 1 0;min-width:0}.chub-lang-sel{width:100%;max-width:none}#mn_btn{flex:none}}
 @media(max-width:430px){#hd_inst .t{display:none}}@media(max-width:400px){.chub-lang span{display:none}.chub-lang{padding-left:10px}}
 
+
+.pc-splash[hidden]{display:none}.pc-splash{position:fixed;inset:0;z-index:10000;background:rgba(4,10,34,.88);display:flex;align-items:center;justify-content:center;padding:28px;backdrop-filter:blur(8px)}.pc-splash-card{position:relative;width:min(1080px,96vw);max-height:92vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:0 24px 90px #0008;padding:14px}.pc-splash-image{display:block;width:100%;max-height:68vh;object-fit:contain;border-radius:14px;background:#eef2ff}.pc-splash-close{position:absolute;right:22px;top:22px;z-index:2;background:#111827;color:white;width:42px;height:42px;padding:0;font-size:20px;box-shadow:0 2px 12px #0005}.pc-splash-actions{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:12px 8px 4px;font-weight:700}.pc-splash-actions a{display:inline-flex;align-items:center;gap:9px;background:#25d366;color:#062b16;text-decoration:none;border-radius:999px;padding:11px 17px}.pc-splash-actions svg{width:24px;height:24px;fill:currentColor}@media(max-width:720px){.pc-splash{display:none!important}}
 </style>
-  <link rel="stylesheet" href="english-quest.css">
 </head>
 <body>
-<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#english-quest">🎮 English Academy (Odia → English)</a><a href="#school-library">📚 School Study Library (Class 5–10)</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
+<div id="pc-splash" class="pc-splash" role="dialog" aria-modal="true" aria-label="C-HUB welcome" hidden>
+  <div class="pc-splash-card"><button type="button" class="pc-splash-close" id="pc-splash-close" aria-label="Close welcome screen">✕</button>
+    <img class="pc-splash-image" src="splash-pc.webp" alt="C-HUB student learning tools">
+    <div class="pc-splash-actions"><span>Study • Skills • Tools</span><a href="https://whatsapp.com/channel/0029Vb9D2fQ8kyyHBslQcD30" target="_blank" rel="noopener noreferrer" aria-label="Join C-HUB WhatsApp Channel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.7 9.7 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4A9.7 9.7 0 1 1 12 21Zm5.3-7.3c-.3-.2-1.7-.8-2-.9s-.5-.2-.7.2-.8.9-1 1.1-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6s0-.4 0-.6-.7-1.6-1-2.2c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4a11 11 0 0 0 4.2 3.7c.6.3 1.1.5 1.5.6.6.2 1.2.2 1.7.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4s-.2-.3-.5-.4Z"/></svg><b>Join WhatsApp Channel</b></a></div>
+  </div>
+</div>
+<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#school-library">📚 School Study Library (Class 5–10)</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
 
 <div class="wrap">
 <nav><a class="logo" href="#top" aria-label="C-HUB home"><img class="lg" src="logo.webp" alt="" width="38" height="38"><span>C<span>-HUB</span></span></a>
@@ -620,7 +627,7 @@ button { padding: 8px 14px; border-radius: 8px; }</textarea></label><label class
    <div class="school-upload"><h3 data-school-i18n="upload">Open a textbook file from your device</h3><p class="school-muted" data-school-i18n="uploadHint">PDFs and images stay on your device.</p><input id="school-file" type="file" accept="application/pdf,image/*" aria-label="Choose textbook PDF or image"><p class="school-status" id="school-status" aria-live="polite">No textbook file selected yet.</p><div id="school-preview" hidden><h4 id="school-preview-title"></h4><button type="button" class="ghost" id="school-preview-close" data-school-i18n="clearFile">Close preview</button></div></div>
   </div>
   <div class="school-panel" id="school-panel-qa" data-school-panel="qa" hidden><h3 data-school-i18n="qaTitle">Practice questions with answers</h3><p data-school-i18n="qaIntro">Original starter questions for practice; verify chapter-specific answers with your textbook.</p><div id="school-qa-list" class="school-qa-list"></div></div>
-  <div class="school-panel" id="school-panel-revision" data-school-panel="revision" hidden><h3 data-school-i18n="revisionTitle">School-exam revision</h3><p data-school-i18n="revisionIntro">Create your own chapter-wise revision cards from the exact questions your teacher assigns.</p><div class="school-form"><label><span data-school-i18n="qLabel">Question</span><textarea id="school-q" maxlength="1200" data-school-placeholder="qPlaceholder" placeholder="Type a question from your textbook or class notes"></textarea></label><label><span data-school-i18n="aLabel">Answer / explanation</span><textarea id="school-a" maxlength="2400" data-school-placeholder="aPlaceholder" placeholder="Write the verified answer in your own words"></textarea></label><div class="full school-actions"><button type="button" id="school-add-card" data-school-i18n="addCard">Save revision card</button><button type="button" class="ghost" id="school-export" data-school-i18n="exportCards">Export my cards</button></div></div><p class="school-muted" data-school-i18n="offline">Your saved revision cards remain on this device; export a backup if you change phones.</p><h4 data-school-i18n="yourCards">Your saved revision cards</h4><div id="school-cards-list" class="school-cards-list"></div></div>
+  <div class="school-panel" id="school-panel-revision" data-school-panel="revision" hidden><h3 data-school-i18n="revisionTitle">School-exam revision</h3><p data-school-i18n="revisionIntro">Create your own chapter-wise revision cards from the exact questions your teacher assigns.</p><div class="school-form"><label><span data-school-i18n="qLabel">Question</span><textarea id="school-q" maxlength="1200" data-school-placeholder="qPlaceholder" placeholder="Type a question from your textbook or class notes"></textarea></label><label><span data-school-i18n="aLabel">Answer / explanation</span><textarea id="school-a" maxlength="2400" data-school-placeholder="aPlaceholder" placeholder="Write the verified answer in your own words"></textarea></label><div class="full school-actions"><button type="button" id="school-add-card" data-school-i18n="addCard">Save revision card</button><button type="button" class="ghost" id="school-export" data-school-i18n="exportCards">Export my cards</button><button type="button" class="ghost" id="school-import-btn">Import backup</button><input id="school-import-file" type="file" accept="application/json,.json" hidden><input id="school-card-search" type="search" placeholder="Search saved cards…" aria-label="Search saved revision cards"></div></div><p class="school-muted" data-school-i18n="offline">Your saved revision cards remain on this device; export a backup if you change phones.</p><h4 data-school-i18n="yourCards">Your saved revision cards</h4><div id="school-cards-list" class="school-cards-list"></div></div>
   <p class="school-muted" data-school-text="warning">⚠️ C-HUB is an independent study tool, not an official BSE Odisha website. Official textbooks and chapter-specific answer keys must be checked against the current edition. The visual cards and sample Q&amp;A here are original practice aids, not a replacement for the textbook.</p>
  </div>
 </section>
@@ -844,55 +851,6 @@ button { padding: 8px 14px; border-radius: 8px; }</textarea></label><label class
 <h3>Contact</h3><p>C-HUB is made by Chandan, Brahmapur, Odisha. Updates are shared on our WhatsApp Channel.</p></div></section>
 
 
-<section id="english-quest" aria-labelledby="eq-title">
-  <div class="wrap">
-    <div class="eq-hero">
-      <div>
-        <p class="eq-eyebrow">C-HUB • OFFLINE LEARNING GAME</p>
-        <h2 id="eq-title">🎮 English Quest</h2>
-        <p class="eq-lead">Learn English from Odia, one small step at a time. ଓଡ଼ିଆରୁ ଇଂରାଜୀ ଶିଖନ୍ତୁ।</p>
-        <div class="eq-hero-pills"><span>⚡ <b id="eq-xp">0</b> XP</span><span>🏅 <b id="eq-level">Level 1</b></span><span>✅ <b id="eq-done">0</b> lessons done</span></div>
-      </div>
-      <div class="eq-mascots" aria-label="Robot teacher and owl mascot"><div class="eq-robot">🤖<small>Robo Teacher</small></div><div class="eq-owl">🦉<small>Owl Buddy</small></div></div>
-    </div>
-
-    <div class="eq-layout">
-      <div class="eq-main">
-        <div class="eq-card">
-          <div class="eq-card-head"><div><h3>🧭 Learning path</h3><p>Choose a level and collect XP.</p></div><span class="eq-chip">3 LEVELS</span></div>
-          <div class="eq-levels" id="eq-levels"></div>
-        </div>
-
-        <div class="eq-card" id="eq-game-card">
-          <div class="eq-card-head"><div><h3>🤖 Robo Teacher's Challenge</h3><p id="eq-game-subtitle">Choose a level above to begin.</p></div><span class="eq-chip" id="eq-game-badge">READY</span></div>
-          <div class="eq-progress"><span id="eq-progress-bar"></span></div>
-          <div id="eq-quiz-area" class="eq-quiz-area">
-            <div class="eq-welcome"><span>🦉</span><div><b>Namaskar! ନମସ୍କାର!</b><p>Choose a lesson to start learning. Correct answers earn 10 XP.</p></div></div>
-          </div>
-        </div>
-      </div>
-
-      <aside class="eq-side">
-        <div class="eq-card">
-          <h3>🔎 Odia → English phrasebook</h3>
-          <p class="eq-muted">Search a phrase or choose a topic. These phrases are available offline.</p>
-          <label class="eq-search-label" for="eq-search">Find a phrase / ବାକ୍ୟ ଖୋଜନ୍ତୁ</label>
-          <input id="eq-search" type="search" placeholder="Try: ଧନ୍ୟବାଦ or thank you">
-          <div class="eq-categories" id="eq-categories"></div>
-          <div id="eq-phrases" class="eq-phrases"></div>
-        </div>
-        <div class="eq-card eq-daily">
-          <div class="eq-daily-icon">🎯</div><h3>Daily quest</h3>
-          <p id="eq-daily-text">Answer 5 questions today.</p>
-          <div class="eq-progress"><span id="eq-daily-bar"></span></div>
-          <p class="eq-muted">Your progress stays in this browser on this device.</p>
-          <button type="button" class="eq-button eq-button-light" id="eq-reset">Reset game progress</button>
-        </div>
-      </aside>
-    </div>
-    <p class="eq-footnote">Offline note: the built-in lessons and phrasebook work without internet. The phrasebook covers included phrases; it is not an unlimited machine translator.</p>
-  </div>
-</section>
 
 <a class="wa" href="https://whatsapp.com/channel/0029Vb9D2fQ8kyyHBslQcD30" target="_blank" rel="noopener noreferrer" aria-label="Join our WhatsApp Channel">📢 Join Channel</a>
 <footer><div class="wrap"><div class="fg"><div><div class="fb"><img src="logo.webp" alt="" width="52" height="52"><b class="flogo">C-HUB</b></div><p>Study • Skills • Tools</p><p>🔒 Everything runs on your device and your files are not uploaded anywhere.</p></div>
@@ -2593,6 +2551,9 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
   document.documentElement.dataset.chubVersion='2.0-final';
 })();
 </script>
+<script>
+(function(){var box=document.getElementById('pc-splash'),close=document.getElementById('pc-splash-close');if(!box||!close)return;var desktop=window.matchMedia('(min-width:721px)').matches;var seen=false;try{seen=sessionStorage.getItem('chub_pc_splash_seen')==='1'}catch(e){}if(desktop&&!seen)box.hidden=false;function dismiss(){box.hidden=true;try{sessionStorage.setItem('chub_pc_splash_seen','1')}catch(e){}}close.addEventListener('click',dismiss);box.addEventListener('click',function(e){if(e.target===box)dismiss()});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!box.hidden)dismiss()})})();
+</script>
 <script src="i18n.js"></script>
 <script src="school-library.js" defer></script>
 <script>
@@ -2614,7 +2575,7 @@ $('type-start').addEventListener('click',start);$('type-finish').addEventListene
 function drawTypeHistory(){var tests=data.tests||[];$('type-best').textContent=tests.length?'Best saved speed: '+(data.best||0)+' WPM':'No test yet';$('type-history').textContent=tests.length?'Recent: '+tests.slice(0,5).map(function(t){return t.wpm+' WPM / '+t.accuracy+'%'}).join(' · '):'Recent tests will appear here.'}drawTypeHistory();$('type-clock').textContent=fmt(Number($('type-duration').value)*60);
 // Code editor: local sandboxed HTML/CSS/JS preview. JS source is put in a script tag after escaping closing tags.
 var starters={html:{html:'<h1>Hello, C-HUB!</h1>\n<p>My first webpage.</p>\n<button onclick="document.getElementById(\'msg\').textContent=\'It works!\'">Click me</button>\n<p id="msg"></p>',css:'body { font-family: system-ui; padding: 20px; color: #243b80; }\nbutton { padding: 8px 14px; border-radius: 8px; }',js:"console.log('Hello from C-HUB');"},css:{html:'<h1>Style this page</h1>\n<p>Change the CSS to try new colours and spacing.</p>',css:'body { font-family: system-ui; padding: 24px; background: #f4f7fb; }\nh1 { color: #2b3a8f; }\np { padding: 12px; border-radius: 12px; background: #fff; }',js:''},js:{html:'<h1>JavaScript practice</h1>\n<button id="hello">Click me</button>\n<p id="result">Waiting…</p>',css:'body { font-family: system-ui; padding: 20px; }',js:"document.getElementById('hello').addEventListener('click', function(){ document.getElementById('result').textContent='Great work!'; });"}};
-function loadCode(){var k=$('code-starter').value,v=starters[k];$('code-html').value=v.html;$('code-css').value=v.css;$('code-js').value=v.js}function runCode(){var h=$('code-html').value.replace(/<script/gi,'&lt;script'),c=$('code-css').value.replace(/<\/style/gi,'<\\/style'),j=$('code-js').value.replace(/<\/script/gi,'<\\/script');var doc='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>'+c+'</style></head><body>'+h+'<script>'+j+'<\/script><script src="english-quest.js" defer></script>
+function loadCode(){var k=$('code-starter').value,v=starters[k];$('code-html').value=v.html;$('code-css').value=v.css;$('code-js').value=v.js}function runCode(){var h=$('code-html').value.replace(/<script/gi,'&lt;script'),c=$('code-css').value.replace(/<\/style/gi,'<\\/style'),j=$('code-js').value.replace(/<\/script/gi,'<\\/script');var doc='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>'+c+'</style></head><body>'+h+'<script>'+j+'<\/script>
 </body></html>';$('code-preview').srcdoc=doc}
 $('code-load').addEventListener('click',loadCode);$('code-starter').addEventListener('change',loadCode);$('code-run').addEventListener('click',runCode);$('code-save').addEventListener('click',function(){data.project={html:$('code-html').value,css:$('code-css').value,js:$('code-js').value};write(data);var b=$('code-save');b.textContent='Saved on this device ✓';setTimeout(function(){b.textContent='Save project'},1600)});if(data.project){$('code-html').value=data.project.html||'';$('code-css').value=data.project.css||'';$('code-js').value=data.project.js||''}runCode();
 // Fundamentals library

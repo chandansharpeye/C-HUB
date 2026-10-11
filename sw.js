@@ -2,14 +2,14 @@
  * Core app shell is precached. Optional PDF libraries are cached when online;
  * an unavailable CDN never prevents installation.
  */
-const CACHE_VERSION = "v13";
+const CACHE_VERSION = "v14";
 const CACHE = "c-hub-" + CACHE_VERSION;
 const SHELL = [
   "./", "./index.html", "./manifest.json", "./i18n.js", "./school-library.js", "./school-library.css",
   "./logo.webp", "./icon-192.png", "./icon-512.png",
   "./icon-maskable-512.png", "./apple-touch-icon.png",
   "./favicon-32.png", "./favicon-48.png", "./favicon.ico",
-  "./chub-upgrade.js", "./english-quest.css", "./english-quest.js"
+  "./chub-upgrade.js", "./splash-pc.webp"
 ];
 const OPTIONAL_LIBS = [
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js",
