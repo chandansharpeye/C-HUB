@@ -1,4 +1,4 @@
-/* C-HUB service worker upgrade — v13
+/* C-HUB service worker upgrade — v12
  * Core app shell is precached. Optional PDF libraries are cached when online;
  * an unavailable CDN never prevents installation.
  */
@@ -9,7 +9,7 @@ const SHELL = [
   "./logo.webp", "./icon-192.png", "./icon-512.png",
   "./icon-maskable-512.png", "./apple-touch-icon.png",
   "./favicon-32.png", "./favicon-48.png", "./favicon.ico",
-  "./chub-upgrade.js", "./english-academy.js", "./english-academy.css", "./mr-chandan-robot.svg"
+  "./chub-upgrade.js", "./english-quest.css", "./english-quest.js"
 ];
 const OPTIONAL_LIBS = [
   "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js",

@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="school-library.css">
-<link rel="stylesheet" href="english-academy.css">
 <meta name="theme-color" content="#032577">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -361,9 +360,10 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 @media(max-width:430px){#hd_inst .t{display:none}}@media(max-width:400px){.chub-lang span{display:none}.chub-lang{padding-left:10px}}
 
 </style>
+  <link rel="stylesheet" href="english-quest.css">
 </head>
 <body>
-<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#school-library">📚 School Study Library (Class 5–10)</a><a href="#english-academy">🇬🇧 English Learning Academy</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
+<div id="mn" role="dialog" aria-modal="true" aria-label="Menu" hidden><div class="wrap"><div class="top"><input id="mn_q" type="search" placeholder="Search tools, formulas, topics…" aria-label="Search C-HUB"><button type="button" id="mn_x" aria-label="Close menu">✕ Close</button></div><div class="res" id="mn_res" aria-live="polite"></div><div id="mn_grp"><h3>🏠 My Space</h3><div class="ml"><a href="#dashboard">Dashboard</a><a href="#system">Student System</a><a href="#mytools">My Study Tools</a></div><h3>📚 Study &amp; Exams</h3><div class="ml"><a href="#study">Study Methods</a><a href="#strategy">90%+ Strategy</a><a href="#commerce">Commerce Corner</a><a href="#formulas">Formula Library</a><a href="#calc">Calculators</a><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#english-quest">🎮 English Academy (Odia → English)</a><a href="#school-library">📚 School Study Library (Class 5–10)</a><a href="#assistant">AI Study Assistant</a><a href="#learning-hub">💻 Computer Learning Hub</a><a href="#job-alerts">💼 Job Alerts</a></div><h3>🗓️ Daily Planner</h3><div class="ml"><a href="#focus">Focus Timer</a><a href="#quicknotes">Quick Notes</a><a href="#planner">Homework &amp; Attendance</a><a href="#timetable">Timetable</a><a href="#marks">Marks Tracker</a><a href="#exams">Exams &amp; Reminders</a></div><h3>📄 Files &amp; Documents</h3><div class="ml"><a href="#filetools">PDF &amp; Image Tools</a><a href="#resume">Resume Maker</a><a href="#letters">Application Letters</a><a href="#billing">Invoice &amp; Receipt</a><a href="#govlinks">Government Links</a></div><h3>🎯 Career &amp; Skills</h3><div class="ml"><a href="#career">Career Explore</a><a href="#skills">Skills Tracker</a><a href="#boost">Daily Boost</a></div><h3>ℹ️ Help &amp; Info</h3><div class="ml"><a href="#feedback">WhatsApp Channel</a><a href="#about">About C-HUB</a><a href="#faq">FAQs</a><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a></div></div><h3>App</h3><div class="row"><button type="button" id="mn_inst">📲 Install as App</button><button type="button" id="mn_tour" class="ghost">🎓 Show tour</button></div><p class="note" id="mn_hint"></p></div></div>
 
 <div class="wrap">
 <nav><a class="logo" href="#top" aria-label="C-HUB home"><img class="lg" src="logo.webp" alt="" width="38" height="38"><span>C<span>-HUB</span></span></a>
@@ -381,7 +381,6 @@ nav{padding-right:56px}.wrap>section>.wrap{padding-left:0;padding-right:0}
 <div class="top-tools-grid" style="margin-top:14px">
 <a class="top-tool" href="#practice">🧠 <span>Practice &amp; Tests<small>Quiz and mock tests</small></span></a>
 <a class="top-tool" href="#school-library">📚 <span>School Study Library<small>Classes 5–10 · BSE Odisha</small></span></a>
-<a class="top-tool" href="#english-academy">🇬🇧 <span>English Academy<small>Learn English by playing</small></span></a>
 <a class="top-tool" href="#notes">📝 <span>Notes Maker<small>Make quick notes</small></span></a>
 <a class="top-tool" href="#filetools">📄 <span>PDF &amp; Image Tools<small>Convert and compress</small></span></a>
 <a class="top-tool" href="#focus">⏱️ <span>Focus Timer<small>Study sessions</small></span></a>
@@ -844,16 +843,58 @@ button { padding: 8px 14px; border-radius: 8px; }</textarea></label><label class
 <h3>Availability and changes</h3><p>Tools may change, stop working or be updated at any time without notice. We may update these terms and the Privacy Policy; continuing to use C-HUB means you accept the updated version.</p>
 <h3>Contact</h3><p>C-HUB is made by Chandan, Brahmapur, Odisha. Updates are shared on our WhatsApp Channel.</p></div></section>
 
+
+<section id="english-quest" aria-labelledby="eq-title">
+  <div class="wrap">
+    <div class="eq-hero">
+      <div>
+        <p class="eq-eyebrow">C-HUB • OFFLINE LEARNING GAME</p>
+        <h2 id="eq-title">🎮 English Quest</h2>
+        <p class="eq-lead">Learn English from Odia, one small step at a time. ଓଡ଼ିଆରୁ ଇଂରାଜୀ ଶିଖନ୍ତୁ।</p>
+        <div class="eq-hero-pills"><span>⚡ <b id="eq-xp">0</b> XP</span><span>🏅 <b id="eq-level">Level 1</b></span><span>✅ <b id="eq-done">0</b> lessons done</span></div>
+      </div>
+      <div class="eq-mascots" aria-label="Robot teacher and owl mascot"><div class="eq-robot">🤖<small>Robo Teacher</small></div><div class="eq-owl">🦉<small>Owl Buddy</small></div></div>
+    </div>
+
+    <div class="eq-layout">
+      <div class="eq-main">
+        <div class="eq-card">
+          <div class="eq-card-head"><div><h3>🧭 Learning path</h3><p>Choose a level and collect XP.</p></div><span class="eq-chip">3 LEVELS</span></div>
+          <div class="eq-levels" id="eq-levels"></div>
+        </div>
+
+        <div class="eq-card" id="eq-game-card">
+          <div class="eq-card-head"><div><h3>🤖 Robo Teacher's Challenge</h3><p id="eq-game-subtitle">Choose a level above to begin.</p></div><span class="eq-chip" id="eq-game-badge">READY</span></div>
+          <div class="eq-progress"><span id="eq-progress-bar"></span></div>
+          <div id="eq-quiz-area" class="eq-quiz-area">
+            <div class="eq-welcome"><span>🦉</span><div><b>Namaskar! ନମସ୍କାର!</b><p>Choose a lesson to start learning. Correct answers earn 10 XP.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="eq-side">
+        <div class="eq-card">
+          <h3>🔎 Odia → English phrasebook</h3>
+          <p class="eq-muted">Search a phrase or choose a topic. These phrases are available offline.</p>
+          <label class="eq-search-label" for="eq-search">Find a phrase / ବାକ୍ୟ ଖୋଜନ୍ତୁ</label>
+          <input id="eq-search" type="search" placeholder="Try: ଧନ୍ୟବାଦ or thank you">
+          <div class="eq-categories" id="eq-categories"></div>
+          <div id="eq-phrases" class="eq-phrases"></div>
+        </div>
+        <div class="eq-card eq-daily">
+          <div class="eq-daily-icon">🎯</div><h3>Daily quest</h3>
+          <p id="eq-daily-text">Answer 5 questions today.</p>
+          <div class="eq-progress"><span id="eq-daily-bar"></span></div>
+          <p class="eq-muted">Your progress stays in this browser on this device.</p>
+          <button type="button" class="eq-button eq-button-light" id="eq-reset">Reset game progress</button>
+        </div>
+      </aside>
+    </div>
+    <p class="eq-footnote">Offline note: the built-in lessons and phrasebook work without internet. The phrasebook covers included phrases; it is not an unlimited machine translator.</p>
+  </div>
+</section>
+
 <a class="wa" href="https://whatsapp.com/channel/0029Vb9D2fQ8kyyHBslQcD30" target="_blank" rel="noopener noreferrer" aria-label="Join our WhatsApp Channel">📢 Join Channel</a>
-<section id="english-academy" data-no-i18n="true" aria-labelledby="ea-title"><div class="ea-wrap">
-<div class="ea-hero"><div><p><strong>🇬🇧 C-HUB ENGLISH LEARNING ACADEMY</strong></p><h2 id="ea-title">Learn English. Level up. 🚀</h2><p>Namaskar! I’m Mr. Chandan, your friendly robot teacher. Learn a little every day, practise without fear, and earn XP as you grow.</p><div class="ea-actions"><button class="ea-btn" id="ea-continue" type="button">▶ Continue learning</button><button class="ea-btn alt" id="ea-challenge" type="button">⚡ Daily challenge</button><button class="ea-btn light" id="ea-sound" type="button">🔊 Sound: Off</button></div><p id="ea-online" aria-live="polite">Checking offline status…</p></div><img class="ea-mascot" src="mr-chandan-robot.svg" alt="Mr. Chandan, a friendly robot English teacher, with his owl companion"></div>
-<div class="ea-stats"><div class="ea-stat"><small>⭐ Total XP</small><b id="ea-xp">0</b></div><div class="ea-stat"><small>🏅 Your rank</small><b id="ea-rank">Word Explorer</b></div><div class="ea-stat"><small>🔥 Learning streak</small><b><span id="ea-streak">0</span> days</b></div><div class="ea-stat"><small>📚 Lessons completed</small><b id="ea-done">0/18</b></div></div>
-<div class="ea-card"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><strong>Course progress</strong><strong id="ea-percent">0% complete</strong></div><div class="ea-progress"><i id="ea-bar"></i></div><label for="ea-goal">Daily learning goal (lessons)</label> <select id="ea-goal" aria-label="Daily learning goal"><option value="1">1 lesson</option><option value="2">2 lessons</option><option value="3">3 lessons</option><option value="5">5 lessons</option><option value="10">10 lessons</option></select><p class="ea-muted" style="margin-bottom:0">Progress and settings are saved on this device. Lessons and the mascot are bundled locally.</p></div>
-<div class="ea-head"><div><h3>🗺️ Your learning path</h3><p class="ea-muted">Complete lessons in order to unlock the next one.</p></div></div><div class="ea-levels" id="ea-levels"></div><div class="ea-head"><div><h3>📘 Lessons: <span id="ea-level-label">Choose a level</span></h3><p class="ea-muted">Each lesson includes an explanation, a question, and English + Odia feedback.</p></div></div><div class="ea-lessons" id="ea-lessons"></div>
-<div class="ea-practice" id="ea-practice" hidden><h3 id="ea-lesson-title">Lesson</h3><p id="ea-teach"></p><div class="ea-card"><strong>🧠 Quick practice</strong><p id="ea-question"></p><div class="ea-options" id="ea-options"></div><div class="ea-feedback" id="ea-feedback" hidden aria-live="polite"></div><button class="ea-btn" id="ea-next" type="button" hidden>Continue</button></div></div>
-<div class="ea-head"><div><h3>🏆 Achievements</h3><p class="ea-muted">Earn badges through real saved learning progress.</p></div></div><div class="ea-badges" id="ea-badges"></div>
-<div class="ea-head"><div><h3>✍️ Writing practice</h3><p class="ea-muted">Write your own answer. Open-ended writing can have more than one correct answer.</p></div></div><div class="ea-card"><label for="ea-writing">Write 1–3 sentences about yourself</label><textarea class="ea-writing" id="ea-writing" placeholder="My name is… I am a student…"></textarea><div class="ea-actions"><button class="ea-btn alt" id="ea-writing-check" type="button">Review my writing</button></div><p id="ea-writing-result" class="ea-feedback" hidden aria-live="polite"></p></div><p id="ea-status" class="ea-muted" role="status" aria-live="polite"></p>
-</div></section>
 <footer><div class="wrap"><div class="fg"><div><div class="fb"><img src="logo.webp" alt="" width="52" height="52"><b class="flogo">C-HUB</b></div><p>Study • Skills • Tools</p><p>🔒 Everything runs on your device and your files are not uploaded anywhere.</p></div>
 <div><h4>Study</h4><a href="#notes">Notes Maker</a><a href="#practice">Practice &amp; Tests</a><a href="#formulas">Formula Library</a><a href="#assistant">AI Study Assistant</a></div>
 <div><h4>Tools</h4><a href="#focus">Focus Timer</a><a href="#filetools">PDF &amp; Image Tools</a><a href="#marks">Marks Tracker</a><a href="#resume">Resume Maker</a></div>
@@ -2554,7 +2595,6 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 </script>
 <script src="i18n.js"></script>
 <script src="school-library.js" defer></script>
-<script src="english-academy.js" defer></script>
 <script>
 /* C-HUB 2.0: local-only learning tools */
 (function(){
@@ -2574,7 +2614,8 @@ $('type-start').addEventListener('click',start);$('type-finish').addEventListene
 function drawTypeHistory(){var tests=data.tests||[];$('type-best').textContent=tests.length?'Best saved speed: '+(data.best||0)+' WPM':'No test yet';$('type-history').textContent=tests.length?'Recent: '+tests.slice(0,5).map(function(t){return t.wpm+' WPM / '+t.accuracy+'%'}).join(' · '):'Recent tests will appear here.'}drawTypeHistory();$('type-clock').textContent=fmt(Number($('type-duration').value)*60);
 // Code editor: local sandboxed HTML/CSS/JS preview. JS source is put in a script tag after escaping closing tags.
 var starters={html:{html:'<h1>Hello, C-HUB!</h1>\n<p>My first webpage.</p>\n<button onclick="document.getElementById(\'msg\').textContent=\'It works!\'">Click me</button>\n<p id="msg"></p>',css:'body { font-family: system-ui; padding: 20px; color: #243b80; }\nbutton { padding: 8px 14px; border-radius: 8px; }',js:"console.log('Hello from C-HUB');"},css:{html:'<h1>Style this page</h1>\n<p>Change the CSS to try new colours and spacing.</p>',css:'body { font-family: system-ui; padding: 24px; background: #f4f7fb; }\nh1 { color: #2b3a8f; }\np { padding: 12px; border-radius: 12px; background: #fff; }',js:''},js:{html:'<h1>JavaScript practice</h1>\n<button id="hello">Click me</button>\n<p id="result">Waiting…</p>',css:'body { font-family: system-ui; padding: 20px; }',js:"document.getElementById('hello').addEventListener('click', function(){ document.getElementById('result').textContent='Great work!'; });"}};
-function loadCode(){var k=$('code-starter').value,v=starters[k];$('code-html').value=v.html;$('code-css').value=v.css;$('code-js').value=v.js}function runCode(){var h=$('code-html').value.replace(/<script/gi,'&lt;script'),c=$('code-css').value.replace(/<\/style/gi,'<\\/style'),j=$('code-js').value.replace(/<\/script/gi,'<\\/script');var doc='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>'+c+'</style></head><body>'+h+'<script>'+j+'<\/script></body></html>';$('code-preview').srcdoc=doc}
+function loadCode(){var k=$('code-starter').value,v=starters[k];$('code-html').value=v.html;$('code-css').value=v.css;$('code-js').value=v.js}function runCode(){var h=$('code-html').value.replace(/<script/gi,'&lt;script'),c=$('code-css').value.replace(/<\/style/gi,'<\\/style'),j=$('code-js').value.replace(/<\/script/gi,'<\\/script');var doc='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>'+c+'</style></head><body>'+h+'<script>'+j+'<\/script><script src="english-quest.js" defer></script>
+</body></html>';$('code-preview').srcdoc=doc}
 $('code-load').addEventListener('click',loadCode);$('code-starter').addEventListener('change',loadCode);$('code-run').addEventListener('click',runCode);$('code-save').addEventListener('click',function(){data.project={html:$('code-html').value,css:$('code-css').value,js:$('code-js').value};write(data);var b=$('code-save');b.textContent='Saved on this device ✓';setTimeout(function(){b.textContent='Save project'},1600)});if(data.project){$('code-html').value=data.project.html||'';$('code-css').value=data.project.css||'';$('code-js').value=data.project.js||''}runCode();
 // Fundamentals library
 var fundamentals=[['Hardware vs software','Hardware is the physical part of a computer. Software is the set of programs and instructions.'],['CPU','The Central Processing Unit executes instructions and coordinates computer operations.'],['RAM','RAM is fast, temporary working memory. Its contents normally disappear when power is off.'],['Storage: HDD / SSD','Storage keeps files for later use. SSDs are generally faster than hard disk drives.'],['Operating system','Windows, macOS, Linux and Android manage devices, files and apps.'],['Files and folders','Use clear names, folders and backups to keep documents organised.'],['Internet and browser','The internet connects networks; a browser opens websites. Check website addresses before sharing data.'],['Email basics','Use a clear subject, polite message, appropriate attachment and careful recipient check.'],['Word / Excel / PowerPoint','Word creates documents, Excel organises and calculates data, and PowerPoint creates slide presentations.'],['Cybersecurity','Use unique passwords, multi-factor authentication, updates and trusted downloads. Never share OTPs.']];
