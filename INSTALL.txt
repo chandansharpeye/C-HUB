@@ -6,15 +6,15 @@ C-HUB 2.0 — INSTALL / DEPLOY
 3. Upload the CONTENTS of the C-HUB-main folder into the GitHub repository root. Do not upload only index.html: the new school-library.js and school-library.css files are required.
 4. Replace the existing index.html, i18n.js, sw.js, manifest.json, README files and matching icons/assets with the release versions. Keep all existing logo/icon/splash assets.
 5. Commit to the GitHub Pages publishing branch.
-6. Wait for Pages to deploy. Open the site, refresh, and if installed as an app, fully close and reopen it to update service worker cache v12.
+6. Wait for Pages to deploy. Open the site, refresh, and if installed as an app, fully close and reopen it to update service worker cache v13.
 
 INSTALL BUTTON
 --------------
 The browser's native install prompt can only be shown where the browser supports it and the PWA meets installability criteria. On unsupported browsers, C-HUB shows manual Add to Home Screen / Install instructions.
 
-SCHOOL STUDY LIBRARY
+ENGLISH ACADEMY + SCHOOL STUDY LIBRARY
 --------------------
-Classes 5–8 link to the SCERT Odisha textbook portal; Classes 9–10 link to BSE Odisha textbook resources. These are official portal links, not guaranteed direct PDF URLs. Use the edition prescribed by the school. Local PDF/image preview does not upload the file. Revision cards are stored in this browser and can be exported.
+English Academy lessons, XP, quiz progress and saved vocabulary work offline after the app shell is cached. Classes 5–8 link to the SCERT Odisha textbook portal; Classes 9–10 link to BSE Odisha textbook resources. These are official portal links, not guaranteed direct PDF URLs. Use the edition prescribed by the school. Local PDF/image preview does not upload the file. Revision cards are stored in this browser and can be exported.
 
 LIMITATIONS
 -----------

@@ -10,7 +10,7 @@ New: School Study Library for Classes 5–10.
 - Personal revision cards saved on this device
 - Export revision cards as JSON
 - Hindi/Odia/English UI for the new library
-- PWA service worker cache bumped to v12
+- PWA service worker cache bumped to v13
 
 PUBLISH
 -------
